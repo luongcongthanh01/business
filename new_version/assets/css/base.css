@@ -1,10 +1,58 @@
+/* boostrap custom */
+.gap-row {
+  padding-bottom: 20px;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+}
+/* boostrap custom end */
 .bg {
   height: 300px;
   position: relative;
 }
 .text1 {
   color: white;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: large;
   font-weight: 600;
+}
+.text2 {
+  padding-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+.text2 span {
+  font-weight: 900;
+}
+.text3 {
+  padding-bottom: 5px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+.text3 span {
+  font-weight: 900;
+}
+.text3-out {
+  padding-bottom: 5px;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+.text3-out span {
+  font-weight: 900;
+}
+.text4 {
+  font-family: "Inter", sans-serif;
+  padding-bottom: 30px;
+  color: rgb(211, 206, 206);
+  font-size: 15px;
+}
+.text4-out {
+  font-family: "Inter", sans-serif;
+  padding-bottom: 30px;
+  color: rgb(77, 75, 75);
+  font-size: 15px;
 }
