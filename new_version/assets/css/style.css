@@ -4,7 +4,7 @@
   padding-top: 25px;
 } */
 .header {
-  background-image: url(/assets/img/background_header.jpg);
+  background-image: url(./assets/img/background_header.jpg);
   max-height: 300px;
   height: 100%;
   position: relative;
