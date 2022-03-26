@@ -1,4 +1,7 @@
 /* boostrap custom */
+body {
+  font-family: "Inter", sans-serif;
+}
 .gap-row {
   padding-bottom: 20px;
 }
@@ -12,15 +15,15 @@
   position: relative;
 }
 .text1 {
-  color: black;
-  font-family: "Inter", sans-serif;
+  color: rgb(0, 0, 0);
   font-size: 50;
+  font-weight: 300;
 }
 .text2 {
   padding-bottom: 30px;
   color: rgb(0, 0, 0);
-  font-family: "Inter", sans-serif;
   font-size: 30px;
+  font-weight: 300;
 }
 .text2 span {
   font-weight: 900;
@@ -29,29 +32,28 @@
   text-align: center;
   padding-bottom: 30px;
   color: rgb(255, 255, 255);
-  font-family: "Inter", sans-serif;
   font-size: 30px;
+  font-weight: 300;
 }
 .text3 span {
   font-weight: 900;
 }
 .text3-out {
   padding-bottom: 5px;
-  color: black;
-  font-family: "Inter", sans-serif;
+  color: rgb(0, 0, 0);
   font-size: 30px;
+  font-weight: 300;
 }
 .text3-out span {
   font-weight: 900;
 }
 .text4 {
-  font-family: "Inter", sans-serif;
   padding-bottom: 30px;
   color: rgb(211, 206, 206);
   font-size: 15px;
+  font-weight: 300;
 }
 .text4-out {
-  font-family: "Inter", sans-serif;
   padding-bottom: 30px;
   color: rgb(77, 75, 75);
   font-size: 15px;
