@@ -12,10 +12,9 @@
   position: relative;
 }
 .text1 {
-  color: white;
+  color: black;
   font-family: "Inter", sans-serif;
-  font-size: large;
-  font-weight: 600;
+  font-size: 50;
 }
 .text2 {
   padding-bottom: 30px;
@@ -27,7 +26,8 @@
   font-weight: 900;
 }
 .text3 {
-  padding-bottom: 5px;
+  text-align: center;
+  padding-bottom: 30px;
   color: rgb(255, 255, 255);
   font-family: "Inter", sans-serif;
   font-size: 30px;
