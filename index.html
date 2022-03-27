@@ -1,92 +1,1120 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- CSS only -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
-    <title>Sodia business</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <title>Sodia Business</title>
   </head>
   <body>
-    <div class="container py-5">
-      <div class="row">
-        <div
-          class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded"
-        >
-          <h2 class="text-center fw-bold mb-3">Contact Us</h2>
-          <form name="google-sheet">
-            <div id="form_alerts"></div>
-            <div class="form-group mb-3">
-              <label for="name" class="form-label">Name</label>
+    <header class="header">
+      <div class="header-area">
+        <a href="https://sodia.agency/" class="header_logo" target="_blank"
+          ><img src="/assets/img/Logo_red.png" alt="sodia Logo"
+        /></a>
+        <!-- <div class="text1">
+          <span><h1>ĐỀ XUẤT GIẢI PHÁP 3X DOANH SỐ TỪ SODIA AGENCY</h1></span>
+          <h3></h3>
+        </div> -->
+        <!-- Language -->
+        <div class="dropdown show">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          Language
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/en">English</a>
+            <a class="dropdown-item" href="/">Vietnames</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- tab toggle -->
+    <div class="wrapper">
+      <div class="container col-sm-12">
+        <div class="layout_out">
+          <div class="layout_in-side">
+            <div class="text2"><h2>THÔNG TIN<span> LIÊN HỆ</span></h2></div>
+            <!-- FORM 1 -->
+            <form>
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Khách hàng">
+                </div>  
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Điện thoại">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Tên công ty">
+                </div>
+              </div>
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Đã từng hợp tác trước đây">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="text3-out"><h2>CHỌN<span> GIẢI PHÁP</span></h2></div>
+          <div class="text4-out">Chọn tab bên dưới nếu anh/chị muốn làm việc nhiều hơn với chúng tôi
+            trong các dịch vụ khác.
+            </div>
+          </div>
+    </div>
+    <div class="wrapper-tab">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Sodia Management</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >X10 Qualified Lead</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-contact-tab"
+              data-toggle="tab"
+              href="#nav-contact"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              >Website Ultimatly</a
+            >
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+          <div class="layout_out-side">
+            <div class="text3">
+              <h2><span>GIẢI PHÁP</span> QUẢN TRỊ TRUYỀN THÔNG XÃ HỘI TRỰC TUYẾN</h2>
+            </div>
+            <div class="layout_in-side">
+              <div class="text2">
+                <h2>MỤC TIÊU<span> TRUYỀN THÔNG</span></h2>
+              </div>
+              <div class="checkbox-layout">
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Biết đến</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Thích thú</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Tin Tưởng</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Mua hàng</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Chăm sóc</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Bán lại</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+                </div>
+                <div class="form-check form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Trung thành</label>
+                </div>
+              </div>
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Khác">
+                </div>
+              </div>
+            </div>
+            <!-- OUT-IN CONTENT -->
+            <div class="text3_sub">
+              <h2>HẠNG MỤC<span> GIẢI PHÁP</span></h2>
+            </div>
+            <div class="text4">Chọn tab bên dưới nếu anh/chị muốn làm việc nhiều hơn với chúng tôi
+              trong các dịch vụ khác.
+              </div>
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                      <div class="text5-out">CHIẾN DỊCH
+                      </div>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <div class="layout_in-side">              <div class="checkbox-layout">
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Khai trương/Ra mắt</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Hội thảo trực tuyến</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Đến nơi trải nghiệm</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Chăm sóc</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Chăm sóc</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Bán lại</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Trung thành</label>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                      <div class="text5-out">THƯƠNG HIỆU</div>
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <div class="layout_in-side">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high
+                      life accusamus terry richardson ad squid. 3 wolf moon
+                      officia aute, non cupidatat skateboard dolor brunch.
+                      Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      wolf moon tempor, sunt aliqua put a bird on it squid
+                      single-origin coffee nulla assumenda shoreditch et.
+                      Nihil anim keffiyeh helvetica, craft beer labore wes
+                      anderson cred nesciunt sapiente ea proident. Ad vegan
+                      excepteur butcher vice lomo. Leggings occaecat craft
+                      beer farm-to-table, raw denim aesthetic synth nesciunt
+                      you probably haven't heard of them accusamus labore
+                      sustainable VHS.
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                      <div class="text5-out">QUẢNG CÁO</div>
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <div class="layout_in-side">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high
+                      life accusamus terry richardson ad squid. 3 wolf moon
+                      officia aute, non cupidatat skateboard dolor brunch.
+                      Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      wolf moon tempor, sunt aliqua put a bird on it squid
+                      single-origin coffee nulla assumenda shoreditch et.
+                      Nihil anim keffiyeh helvetica, craft beer labore wes
+                      anderson cred nesciunt sapiente ea proident. Ad vegan
+                      excepteur butcher vice lomo. Leggings occaecat craft
+                      beer farm-to-table, raw denim aesthetic synth nesciunt
+                      you probably haven't heard of them accusamus labore
+                      sustainable VHS.
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                      <div class="text5-out">NHÂN SỰ</div>
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <div class="layout_in-side">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high
+                      life accusamus terry richardson ad squid. 3 wolf moon
+                      officia aute, non cupidatat skateboard dolor brunch.
+                      Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      wolf moon tempor, sunt aliqua put a bird on it squid
+                      single-origin coffee nulla assumenda shoreditch et.
+                      Nihil anim keffiyeh helvetica, craft beer labore wes
+                      anderson cred nesciunt sapiente ea proident. Ad vegan
+                      excepteur butcher vice lomo. Leggings occaecat craft
+                      beer farm-to-table, raw denim aesthetic synth nesciunt
+                      you probably haven't heard of them accusamus labore
+                      sustainable VHS.
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- GIẢI PHÁP -->
+            <div class="layout_in-side">
+              <div class="text2">
+                <h2><span>THÔNG TIN</span> VỀ WEBSITE</h2>
+              </div>
+              <form>
+                <div class="row gap-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Mục đích xây dựng website mới? (Thể hiện được các tiêu chí của công ty: công ty lớn uy tín lâu năm, sáng tạo, luôn đổi mới, ... )">
+                  </div>
+                </div>
+                <div class="row gap-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Sản phẩm/dịch vụ công ty anh chị giới thiệu trên website là gì?">
+                  </div>
+                </div>
+                <div class="row gap-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Những điểm cần lưu ý ở website mới hoặc cần cải thiện so với website cũ">
+                  </div>
+                </div>  
+              </form>
+              <div class="text5">
+                <h3>MỤC TIÊU MUỐN ĐẠT ĐƯỢC ĐỐI VỚI WEBSITE MỚI NÀY</h3>
+              </div>
+              <div class=".checkbox_layout-inline">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Giới thiệu công ty</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Thương mại điện tử</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Thu hút khách hàng mới</label>
+              </div>
+            </div>
+            <div class="row gap-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Khác">
+              </div>
+            </div>  
+            <div class="row gap-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Vui lòng liệt kê 1 vài mẫu thiết kế website mà công ty anh/chị cảm thấy thích. Những điểm mà anh/ chị thích trên những website đó là gì?">
+              </div>
+            </div>  
+            <div class="row gap-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Các từ/cụm từ mà công ty bạn muốn người dùng tìm kiếm sẽ dẫn đến trang web của công ty bạn?">
+              </div>
+            </div>  
+            <div class="row gap-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Vui lòng liệt kê những trang chính mà công ty anh/ chị cần phải có trên website (Ví dụ: Trang chủ, Giới thiệu, Liên hệ, Sản phẩm, Cơ hội nghề nghiệp, Sự kiện...)">
+              </div>
+            </div>
+            <div class="text5">
+              <h3>MÔ TẢ VỀ PHONG CÁCH WEBSITE MONG MUỐN</h3>
+            </div>
+            <div class="checkbox-layout">
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Hiện đại</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Trẻ trung</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Đơn giản</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Sang trọng</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Bố cục mới lạ</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Cổ điển</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Màu sắc</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Hoài cổ</label>
+            </div>
+          </div>
+          <div class="row gap-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Khác">
+            </div>
+          </div>
+<!--  -->
+          <div class="text5">
+            <h3>NHỮNG NỘI DUNG NÀO CẦN ĐƯỢC THỂ HIỆN Ở TRANG CHỦ</h3>
+          </div>
+          <div class="checkbox-layout">
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Thanh menu</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Banner</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Sản phẩm chính</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Video</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Bản đồ</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Mẫu đăng kí</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Footer</label>
+          </div>
+        </div>
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Khác">
+          </div>
+        </div>
+        <!--  -->
+        <div class="text5">
+          <h3>NHỮNG CHỨC NĂNG NÀO SAU ĐÂY CẦN CÓ TRÊN WEBSITE</h3>
+        </div>
+        <div class="checkbox-layout">
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Banner slider</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Video</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Chia sẻ mạng xã hội</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Form liên hệ</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Đăng ký email</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Thư viện ảnh</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Tìm kiếm</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Bài viết mới nhất</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Xem nhiều nhất</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Thương mại điện tử</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Bộ lọc SP</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Hỗ trợ trực tuyến</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Pop-up Quảng cáo</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Đăng ký/ Đăng nhập</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Bình luận bài viết</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Diễn đàn</label>
+        </div>
+      </div>
+      <div class="row gap-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Khác">
+        </div>
+      </div>
+      <div class="row gap-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Ngôn ngữ nào sẽ được hiển thị trên trang web?">
+        </div>
+      </div>
+      <div class="row gap-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Anh/chị có bất kỳ tài liệu nào có sẵn cho thiết kế trang web không?  Ví dụ: Logo, giao diện wireframe, hoặc tập tin thiết kế, hình ảnh ...">
+        </div>
+      </div>
+      <!-- Upload -->
+      <div class="file_preview">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3">
+            <div class="file-upload">
               <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-control"
-                placeholder="Enter your name"
-                required
+                type="file"
+                class="my_image_upload"
+                name="my_image_upload[]"
+                data-upload="design_require_file"
+                multiple="true"
+                style="opacity: 0"
               />
+              <p class="ibenic_file_upload_text">
+                Chọn tập tin
+              </p>
             </div>
-            <div class="form-group mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control"
-                placeholder="Enter your email address"
-                required
-              />
+          </div>
+        </div>
+      </div>
+      <!-- Upload -->
+      <div class="row gap-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Thời gian dự kiến giới thiệu website mới">
+        </div>
+      </div>
+      <div class="row gap-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Những thông tin thêm liên quan đến việc thiết kế website">
+        </div>
+      </div>
+        <!--  -->
             </div>
-            <div class="form-group mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-control"
-                placeholder="Enter your message"
-                rows="5"
-                required
-              ></textarea>
+            <!-- FORM 3 -->
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <div class="layout_out-side">
+              <div class="text3">
+                <h2><span>GIẢI PHÁP</span> 10X KHÁCH HÀNG TIỀM NĂNG CHẤT LƯỢNG CAO</h2>
+              </div>
+              <div class="layout_in-side">
+                <div class="text2">
+                  <h2>YÊU CẦU<span> THIẾT KẾ</span></h2>
+                </div>
+                <!-- FORM 1 -->
+                <form>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Website hiện tại nếu có"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Tên công ty anh/chị có ý nghĩa gì?"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Hãy liệt kê các đối thủ cạnh tranh chính? (Vui lòng gửi địa chỉ website nếu có)"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Sự khác biệt của công ty với các đối thủ khác"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Slogan hoặc tagline của công ty anh/chị là gì?"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Vui lòng cho biết ngân sách ước tính cho dự án này"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- GIẢI PHÁP -->
+              <div class="layout_in-side">
+                <div class="text2">
+                  <h2><span>THÔNG TIN</span> VỀ WEBSITE</h2>
+                </div>
+                <form>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Website hiện tại nếu có"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Tên công ty anh/chị có ý nghĩa gì?"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Hãy liệt kê các đối thủ cạnh tranh chính? (Vui lòng gửi địa chỉ website nếu có)"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Sự khác biệt của công ty với các đối thủ khác"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Slogan hoặc tagline của công ty anh/chị là gì?"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Vui lòng cho biết ngân sách ước tính cho dự án này"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- FORM 3 -->
+              <div class="layout_in-side">
+
+              </div>
             </div>
-            <div>
-              <button class="btn btn-primary me-2" type="submit">
-                Send message!
-              </button>
-              <button class="btn btn-danger" type="reset">
-                Reset the form!
-              </button>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            <div class="layout_out-side">
+              <div class="text3">
+                <h2><span>LẬP TRÌNH</span> WEBSITE CẠNH TRANH VÀ HỢP TÁC</h2>
+              </div>
+              <div class="layout_in-side">
+                <div class="text2">
+                  <h2>YÊU CẦU<span> THIẾT KẾ</span></h2>
+                </div>
+                <!-- FORM 1 -->
+                <form>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Website hiện tại nếu có"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Tên công ty anh/chị có ý nghĩa gì?"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Hãy liệt kê các đối thủ cạnh tranh chính? (Vui lòng gửi địa chỉ website nếu có)"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Sự khác biệt của công ty với các đối thủ khác"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Slogan hoặc tagline của công ty anh/chị là gì?"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Vui lòng cho biết ngân sách ước tính cho dự án này"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- GIẢI PHÁP -->
+              <div class="layout_in-side">
+                <div class="text2">
+                  <h2><span>THÔNG TIN</span> VỀ WEBSITE</h2>
+                </div>
+                <form>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Mục đích xây dựng website mới? (Thể hiện được các tiêu chí của công ty: công ty lớn uy tín lâu năm, sáng tạo, luôn đổi mới, ... )">
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Sản phẩm/dịch vụ công ty anh chị giới thiệu trên website là gì?">
+                    </div>
+                  </div>
+                  <div class="row gap-row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Những điểm cần lưu ý ở website mới hoặc cần cải thiện so với website cũ">
+                    </div>
+                  </div>  
+                </form>
+                <div class="text5">
+                  <h3>MỤC TIÊU MUỐN ĐẠT ĐƯỢC ĐỐI VỚI WEBSITE MỚI NÀY</h3>
+                </div>
+                <div class=".checkbox_layout-inline">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Giới thiệu công ty</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Thương mại điện tử</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Thu hút khách hàng mới</label>
+                </div>
+              </div>
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Khác">
+                </div>
+              </div>  
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Vui lòng liệt kê 1 vài mẫu thiết kế website mà công ty anh/chị cảm thấy thích. Những điểm mà anh/ chị thích trên những website đó là gì?">
+                </div>
+              </div>  
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Các từ/cụm từ mà công ty bạn muốn người dùng tìm kiếm sẽ dẫn đến trang web của công ty bạn?">
+                </div>
+              </div>  
+              <div class="row gap-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Vui lòng liệt kê những trang chính mà công ty anh/ chị cần phải có trên website (Ví dụ: Trang chủ, Giới thiệu, Liên hệ, Sản phẩm, Cơ hội nghề nghiệp, Sự kiện...)">
+                </div>
+              </div>
+              <div class="text5">
+                <h3>MÔ TẢ VỀ PHONG CÁCH WEBSITE MONG MUỐN</h3>
+              </div>
+              <div class="checkbox-layout">
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Hiện đại</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Trẻ trung</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Đơn giản</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Sang trọng</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Bố cục mới lạ</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Cổ điển</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Màu sắc</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Hoài cổ</label>
+              </div>
             </div>
-          </form>
+            <div class="row gap-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Khác">
+              </div>
+            </div>
+<!--  -->
+            <div class="text5">
+              <h3>NHỮNG NỘI DUNG NÀO CẦN ĐƯỢC THỂ HIỆN Ở TRANG CHỦ</h3>
+            </div>
+            <div class="checkbox-layout">
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Thanh menu</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Banner</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Sản phẩm chính</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Video</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Bản đồ</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Mẫu đăng kí</label>
+            </div>
+            <div class="form-check form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Footer</label>
+            </div>
+          </div>
+          <div class="row gap-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Khác">
+            </div>
+          </div>
+          <!--  -->
+          <div class="text5">
+            <h3>NHỮNG CHỨC NĂNG NÀO SAU ĐÂY CẦN CÓ TRÊN WEBSITE</h3>
+          </div>
+          <div class="checkbox-layout">
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Banner slider</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Video</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Chia sẻ mạng xã hội</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Form liên hệ</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Đăng ký email</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Thư viện ảnh</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Tìm kiếm</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Bài viết mới nhất</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Xem nhiều nhất</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Thương mại điện tử</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Bộ lọc SP</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Hỗ trợ trực tuyến</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Pop-up Quảng cáo</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Đăng ký/ Đăng nhập</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Bình luận bài viết</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Diễn đàn</label>
+          </div>
+        </div>
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Khác">
+          </div>
+        </div>
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Ngôn ngữ nào sẽ được hiển thị trên trang web?">
+          </div>
+        </div>
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Anh/chị có bất kỳ tài liệu nào có sẵn cho thiết kế trang web không?  Ví dụ: Logo, giao diện wireframe, hoặc tập tin thiết kế, hình ảnh ...">
+          </div>
+        </div>
+        <!-- Upload -->
+        <div class="file_preview">
+          <div class="row">
+            <div class="col-sm-3 col-xs-3">
+              <div class="file-upload">
+                <input
+                  type="file"
+                  class="my_image_upload"
+                  name="my_image_upload[]"
+                  data-upload="design_require_file"
+                  multiple="true"
+                  style="opacity: 0"
+                />
+                <p class="ibenic_file_upload_text">
+                  Chọn tập tin
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Upload -->
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Thời gian dự kiến giới thiệu website mới">
+          </div>
+        </div>
+        <div class="row gap-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Những thông tin thêm liên quan đến việc thiết kế website">
+          </div>
+        </div>
+          <!--  -->
+              </div>
+              <!-- FORM 3 -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="text4-out col-sm-9 text-left">Cảm ơn anh/ chị đã dành thời gian để điền yêu cầu thiết kế
+          Nếu anh/chị có thông tin, tài liệu gì thêm liên quan, vui lòng gửi email cho chúng tôi.
+          Comma sẽ phản hồi trong thời gian sớm nhất.
+          Xin chân thành cám ơn.
+          </div>
+          <div class="col-sm-3 text-right">
+          <input type="submit" class="btn btn-default submitform" value="GỬI">
+        </div>
         </div>
       </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxjfEUr93sWV_Mg820pj8wCRXl5cv4-LcVhtHwT5eIMz61-DgO2l0AwjcwA6Lq72DHQ/exec";
-      const form = document.forms["google-sheet"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) =>
-            $("#form_alerts").html(
-              "<div class='alert alert-success'>Contact message sent successfully.</div>"
-            )
-          )
-          .catch((error) =>
-            $("#form_alerts").html(
-              "<div class='alert alert-danger'>Contact message not sent.</div>"
-            )
-          );
-      });
-    </script>
+    <!-- end tab toggle -->
+    <!-- js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

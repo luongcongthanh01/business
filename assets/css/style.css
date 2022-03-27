@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   background-color: #f8f8f8;
-  background-image: url(/new_version/assets/img/background_header.jpg);
+  background-image: url(/assets/img/background_header.jpg);
   background-repeat: no-repeat;
   max-height: 300px;
   height: 100%;
