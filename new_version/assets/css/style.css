@@ -82,21 +82,7 @@
 .form-check {
   text-align: left;
 }
-/* .checkbox-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.layout_content {
+  padding-left: 45px;
+  padding-right: 45px;
 }
-.checkbox_layout-inline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.checkbox-layout,
-.form-check {
-  min-height: 1.5rem;
-  padding-right: 9rem;
-  margin-bottom: 1.125rem;
-} */
