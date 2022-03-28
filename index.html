@@ -10,7 +10,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;900&display=swap" rel="stylesheet">
@@ -45,7 +46,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="/en">English</a>
-            <a class="dropdown-item" href="/">Vietnames</a>
+            <a class="dropdown-item" href="/">Vietnamese</a>
           </div>
         </div>
       </div>
@@ -209,7 +210,8 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      <div class="layout_in-side">              <div class="checkbox-layout">
+                      <div class="layout_in-side">              
+                        <div class="checkbox-layout">
                         <div class="form-check form-check">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">Khai trương/Ra mắt</label>
@@ -243,6 +245,11 @@
                           <label class="form-check-label" for="inlineCheckbox3">Trung thành</label>
                         </div>
                       </div>
+                      <div class="row gap-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Khác">
+                        </div>
+                      </div>
                     </div>
                     </div>
                   </div>
@@ -269,18 +276,48 @@
                   >
                     <div class="card-body">
                       <div class="layout_in-side">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high
-                      life accusamus terry richardson ad squid. 3 wolf moon
-                      officia aute, non cupidatat skateboard dolor brunch.
-                      Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-                      wolf moon tempor, sunt aliqua put a bird on it squid
-                      single-origin coffee nulla assumenda shoreditch et.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes
-                      anderson cred nesciunt sapiente ea proident. Ad vegan
-                      excepteur butcher vice lomo. Leggings occaecat craft
-                      beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore
-                      sustainable VHS.
+                        <div class="text5">
+                          <h3>TÀI SẢN THƯƠNG HIỆU</h3>
+                        </div>
+                      <div class="checkbox-layout">
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Ý tưởng</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Phong cách</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Câu chuyện thương hiệu</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Bộ nhận diện</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Chăm sóc</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Bán lại</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Trung thành</label>
+                        </div>
+                      </div>
+                      <div class="row gap-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Khác">
+                        </div>
+                      </div>
                     </div>
                     </div>
                   </div>
@@ -307,18 +344,90 @@
                   >
                     <div class="card-body">
                       <div class="layout_in-side">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high
-                      life accusamus terry richardson ad squid. 3 wolf moon
-                      officia aute, non cupidatat skateboard dolor brunch.
-                      Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-                      wolf moon tempor, sunt aliqua put a bird on it squid
-                      single-origin coffee nulla assumenda shoreditch et.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes
-                      anderson cred nesciunt sapiente ea proident. Ad vegan
-                      excepteur butcher vice lomo. Leggings occaecat craft
-                      beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore
-                      sustainable VHS.
+                        <div class="text5">
+                          <h3>KÊNH PHÂN PHỐI</h3>
+                        </div>
+                      <div class="checkbox-layout">
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Google Ads</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">FaceBook Ads</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Instagram Ads</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Zalo Ads</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Báo điện tử</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Website</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Youtube</label>
+                        </div>
+                        <div class="form-check form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Tiktok</label>
+                        </div>
+                      </div>
+                      <div class="row gap-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Khác">
+                        </div>
+                      </div>
+                      <div class="text5">
+                        <h3>PHƯƠNG PHÁP TIẾP CẬN</h3>
+                      </div>
+                    <div class="checkbox-layout">
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Banner</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Video</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Infographic</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Bộ nhận diện</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Chăm sóc</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Bán lại</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Giới thiệu</label>
+                      </div>
+                      <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Trung thành</label>
+                      </div>
+                    </div>
+                    <div class="row gap-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Khác">
+                      </div>
+                    </div>
                     </div>
                     </div>
                   </div>
@@ -1094,8 +1203,18 @@
           Xin chân thành cám ơn.
           </div>
           <div class="col-sm-3 text-right">
-          <input type="submit" class="btn btn-default submitform" value="GỬI">
+            <!-- model -->
+          <input type="submit" class="btn btn-default submitform" data-toggle="modal" data-target=".bd-example-modal-lg" value="GỬI">
         </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              Cảm ơn
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- model -->
         </div>
       </div>
     </div>
