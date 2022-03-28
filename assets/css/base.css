@@ -71,6 +71,12 @@ body {
   font-size: 15px;
   font-weight: 300;
 }
+.text4-model {
+  /* padding-bottom: 30px; */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
 .text4-out {
   padding-bottom: 30px;
   color: rgb(77, 75, 75);
@@ -80,6 +86,11 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
   color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.text5-model {
+  padding-top: 30px;
+  color: #fff;
   font-size: 20px;
 }
 .text5-out {
